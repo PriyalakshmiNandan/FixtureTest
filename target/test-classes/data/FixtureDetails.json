@@ -1,0 +1,22 @@
+{
+  "fixtureId": 100,
+  "fixtureStatus": {
+    "displayed": true,
+    "suspended": false
+  },
+  "footballFullState": {
+    "homeTeam": "",
+    "awayTeam": "",
+    "finished": false,
+    "gameTimeInSeconds": 2656,
+    "goals": [],
+    "period": "SECOND_HALF",
+    "possibles": [],
+    "corners": [],
+    "redCards": [],
+    "yellowCards": [],
+    "startDateTime": "",
+    "started": true,
+    "teams": []
+  }
+}
