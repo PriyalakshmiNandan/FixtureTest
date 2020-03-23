@@ -4,17 +4,55 @@ formatter.feature({
   "description": "",
   "keyword": "Feature"
 });
+formatter.scenarioOutline({
+  "name": "Verify whether user is able to Create New Fixture",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "User have requested the Post end point for new fixture creation for \"Creation\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "Verify whether user gets proper response for successful Fixture creation",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User have requested the Get end point for retriving all fixtures",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "Verify whether user gets list of Fixtures",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "ID"
+      ]
+    },
+    {
+      "cells": [
+        "100"
+      ]
+    }
+  ]
+});
 formatter.scenario({
   "name": "Verify whether user is able to Create New Fixture",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "User have requested the Post end point for new fixture creation",
+  "name": "User have requested the Post end point for new fixture creation for \"Creation\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefinitions.CreateNewFixtureStepsDefinitions.user_have_requested_the_Post_end_point_for_new_fixture_creation()"
+  "location": "stepdefinitions.CreateNewFixtureStepsDefinitions.user_have_requested_the_Post_end_point_for_new_fixture_creation(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -25,6 +63,26 @@ formatter.step({
 });
 formatter.match({
   "location": "stepdefinitions.CreateNewFixtureStepsDefinitions.verify_whether_user_gets_proper_response_for_successful_Fixture_creation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User have requested the Get end point for retriving all fixtures",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.GetFixtureStepDefinitions.user_have_requested_the_Get_end_point_for_retriving_all_fixtures()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify whether user gets list of Fixtures",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.GetFixtureStepDefinitions.verify_whether_user_gets_list_of_Fixtures()"
 });
 formatter.result({
   "status": "passed"
@@ -48,6 +106,14 @@ formatter.step({
   "name": "Verify whether user gets proper response for successful Fixture deletion",
   "keyword": "Then "
 });
+formatter.step({
+  "name": "User have requested the Get end point for retriving fixture by \u003cID\u003e",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "Verify whether user gets correct error response",
+  "keyword": "Then "
+});
 formatter.examples({
   "name": "",
   "description": "",
@@ -60,7 +126,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "1"
+        "2"
       ]
     }
   ]
@@ -71,7 +137,7 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "User have requested the Delete end point for fixture Deletion for 1",
+  "name": "User have requested the Delete end point for fixture Deletion for 2",
   "keyword": "When "
 });
 formatter.match({
@@ -90,8 +156,28 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "User have requested the Get end point for retriving fixture by 2",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.GetFixtureStepDefinitions.user_have_requested_the_Get_end_point_for_retriving_fixture_by(java.lang.Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify whether user gets correct error response",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.GetFixtureStepDefinitions.verify_whether_user_gets_correct_error_response()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.scenarioOutline({
-  "name": "Verify whether user is able to Delete Fixture by ID",
+  "name": "Verify whether user is displayed with proper error for non-existing ID",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -115,18 +201,18 @@ formatter.examples({
     },
     {
       "cells": [
-        "100"
+        "200"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Verify whether user is able to Delete Fixture by ID",
+  "name": "Verify whether user is displayed with proper error for non-existing ID",
   "description": "",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "User have requested the Delete end point for fixture Deletion for 100",
+  "name": "User have requested the Delete end point for fixture Deletion for 200",
   "keyword": "When "
 });
 formatter.match({
@@ -176,7 +262,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "2"
+        "1"
       ]
     }
   ]
@@ -187,7 +273,7 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "User have requested the Get end point for retriving fixture by 2",
+  "name": "User have requested the Get end point for retriving fixture by 1",
   "keyword": "When "
 });
 formatter.match({
@@ -231,7 +317,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "100"
+        "200"
       ]
     }
   ]
@@ -242,7 +328,7 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "User have requested the Get end point for retriving fixture by 100",
+  "name": "User have requested the Get end point for retriving fixture by 200",
   "keyword": "When "
 });
 formatter.match({

@@ -24,6 +24,5 @@ public class CreateNewFixtureAPI {
         commonLib.request = new RequestSpecBuilder().setBaseUri(createNewFixtureAPIURL).setContentType("charset=UTF-8").build();
         return RestAssured.given(commonLib.request).config(RestAssuredConfig.config().decoderConfig(DecoderConfig.decoderConfig().contentDecoders(DecoderConfig.ContentDecoder.GZIP, DecoderConfig.ContentDecoder.DEFLATE))).
             contentType(ContentType.JSON).body(requestPayload).post().getBody().asString();
-        //config(config().encoderConfig(EncoderConfig.encoderConfig().defaultCharsetForContentType(StandardCharsets.UTF_8.toString(), "application/json")))
     }
 }
